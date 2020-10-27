@@ -6,6 +6,11 @@ describe('warmup', () => {
     const fahrenheit = warmup(-20);
     assert.deepEqual(fahrenheit, -4);
   });
+  
+  it('warm cold', () => {
+    const fahrenheit = warmup(-20);
+    assert.deepEqual(fahrenheit, -100500);
+  });
 
   // just addded a comment
   it('warm cool', () => {
