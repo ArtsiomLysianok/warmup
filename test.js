@@ -22,4 +22,9 @@ describe('warmup', () => {
     const fahrenheit = warmup(40);
     assert.deepEqual(fahrenheit, 104);
   });
+  
+  it('warm hot fail', () => {
+    const fahrenheit = warmup(40);
+    assert.deepEqual(fahrenheit, 1245235);
+  });
 });
